@@ -1,6 +1,6 @@
 package hack;
 
-public class Project_Euler_24_Lexicographic_permutations
+public class replcae
 {
 
 	public static void main(String[] args)

@@ -1,12 +1,14 @@
 package hack;
 
-public class Project_Euler_24_Lexicographic_permutations
+public class Lock_use_analyzer
 {
 
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
 
+		
+		
 	}
 
 }
