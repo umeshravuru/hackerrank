@@ -18,13 +18,15 @@ public class Binary_search
 	public static void main(String[] args)
 	{
 		Scanner s = new Scanner(System.in);
-		int n = s.nextInt();
-		int data [] = new int [n];
-		for(int i =0;i<n;i++)
+		String tem = s.nextLine();
+		tem = tem.substring(1, tem.length()-1);
+		String tem1 [] = tem.split(",");
+		int data [] = new int [tem1.length];
+		for(int i =0;i<data.length;i++)
 		{
-			data[i]= s.nextInt();
+			data[i]= Integer.parseInt(tem1[i]);
 		}
-		int k = s.nextInt();
+		int k = Integer.parseInt(s.nextLine());
 		System.out.println(bin_search(data, k));
 		
 	}
