@@ -2,7 +2,7 @@ package Hackerrank;
 
 import java.util.Scanner;
 
-public class New_Year_Chaos
+class New_Year_Chaos_2
 {
 
 	public static void main(String[] args)
@@ -39,10 +39,10 @@ public class New_Year_Chaos
 				} else if(data[i]>max)
 				{
 					max = data[i];
-					
+
 				}
 				else
-					
+
 				{
 
 					for (int j = 0; j < i; j++)

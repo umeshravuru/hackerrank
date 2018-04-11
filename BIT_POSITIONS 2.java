@@ -22,12 +22,12 @@ public class BIT_POSITIONS
 				System.out.println("true");
 			else
 				System.out.println("false");
-			
+
 		}
-		
+
 	}
-	
-	
+
+
 	public static String conv(long data, int base)
 	{
 

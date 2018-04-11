@@ -2,7 +2,7 @@ package Hackerrank;
 
 import java.util.Scanner;
 
-public class Ema_s_Supercomputer
+class Ema_s_Supercomputer_2
 {
 
 	public static void main(String[] args)
@@ -56,7 +56,7 @@ public class Ema_s_Supercomputer
 					max1 = dis;
 					che=1;
 				}
-				
+
 				System.out.print(dis + " ");
 			}
 			System.out.println();
@@ -67,7 +67,7 @@ public class Ema_s_Supercomputer
 			{
 //				if()
 			}
-		
+
 		}
 		System.out.println(max1+" "+max2);
 		System.out.println(((4*(max1-1))+1)*((4*(max2-1))+1));

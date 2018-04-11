@@ -1,0 +1,16 @@
+.recommend/
+.mylyn/
+/.metadata/
+.plugins/
+/.plugins/
+test/
+testing/
+*.log
+*.xml
+Index/
+.recommenders/
+Caches/
+Snipmatch/
+*.ini
+.idea/
+*.lock
