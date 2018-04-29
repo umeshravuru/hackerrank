@@ -1,8 +1,5 @@
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class sum_of_subset_to_K {
 //    private static ArrayList<ArrayList> ans  = new ArrayList<>();
@@ -73,11 +70,13 @@ public class sum_of_subset_to_K {
         if (subsetSum[curIdx] == subset)
         {
             if (curIdx == K - 2) {
+                System.out.println("9999999999999");
                 System.out.println("1: "+set1);
                 System.out.println("2: "+set2);
                 System.out.println("3: "+set3);
                 disp(subsetSum);
                 disp1(taken);
+                retunrThis(set1,set2,set3,arr.length);
                 return true;
             }
 
@@ -128,6 +127,29 @@ public class sum_of_subset_to_K {
         System.out.println("3: "+set3);
 
         return false;
+    }
+    public static void retunrThis(Set a,Set b,Set c,int N){
+
+        char [] ans = new char[N];
+        for(int i =0;i<ans.length;i++){
+            ans[i] = 'B';
+        }
+
+
+        Iterator<String> it = a.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+         ans[Integer.parseInt(it.next())] = 'R';
+        }
+
+        Iterator<String> it1 = b.iterator();
+        while(it1.hasNext()){
+            ans[Integer.parseInt(it1.next())] = 'G';
+        }
+
+        System.out.println(ans.toString());
+//        return ans.toString();
+
     }
     public static void disp(int[]data){
         for(int i =0;i< data.length;i++){
