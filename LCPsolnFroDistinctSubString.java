@@ -1,4 +1,4 @@
-package hack;
+package coding;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,6 +34,10 @@ public class LCPsolnFroDistinctSubString
 	        }
 	      }
 	      num_substring += arrayString[i + 1].length() - j;
+	      System.out.println(arrayString[i]);
+	    }
+	    for(int i =0;i<arrayString.length;i++){
+//	    	System.out.println(arrayString[i]);
 	    }
 	    System.out.println("unique substrings = " + num_substring);
 	  }

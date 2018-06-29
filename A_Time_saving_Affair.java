@@ -1,15 +1,17 @@
 package coding;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Shortest_distance_from_one_index_to_all_other_index_in_a_graph {
+public class A_Time_saving_Affair {
 
 	public static void main(String[] args) {
+		
+
 		Scanner s = new Scanner(System.in);
-		int t = s.nextInt();
-		for (int ii = 0; ii < t; ii++) {
+		
+		
 			int n = s.nextInt();
+			int t = s.nextInt();
 			int m = s.nextInt();
 			int[][] data = new int[m][3];
 			for (int i = 0; i < m; i++) {
@@ -19,7 +21,7 @@ public class Shortest_distance_from_one_index_to_all_other_index_in_a_graph {
 				data[i][2] = s.nextInt();
 			}
 
-			int present = s.nextInt() - 1;
+			int present = 0;
 			int first_present = present;
 
 			int[] ans = new int[n];
@@ -55,7 +57,7 @@ public class Shortest_distance_from_one_index_to_all_other_index_in_a_graph {
 				for (int i = 0; i < n; i++) {
 					if (visit[i] == 0) {
 						if (ans[i] <= min) {
-							present = i;
+							present = i;	
 							min = ans[i];
 						}
 					}
@@ -82,9 +84,17 @@ public class Shortest_distance_from_one_index_to_all_other_index_in_a_graph {
 			}
 
 			System.out.println("");
+			
+			int final_ans = ans[ans.length-1];
+			System.out.println(ans[ans.length-1]);
+			
+			System.out.println(final_ans + ((final_ans/t)*t));
 
-		}
+		
 
+	
+		
+		
 	}
 
 }
