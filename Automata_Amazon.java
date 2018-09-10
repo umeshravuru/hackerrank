@@ -1,10 +1,7 @@
-package test;
-
+package coding;
 import java.util.*;
-
 public class Automata_Amazon {
-
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		Scanner s  = new Scanner(System.in);
 		String data = s.nextLine();
@@ -18,8 +15,16 @@ public class Automata_Amazon {
 	}
 	
 	public static List<String> sol(String data, List<String> remo) {
+		data = data.toLowerCase();
+		String data1 = "";
+		for(int i =0;i<data.length();i++){
+			if((int)data.charAt(i) >=97 && (int)data.charAt(i) <= 122)
+				data1 = data1 + String.valueOf(data.charAt(i));
+			else
+				data1 = data1 + " ";
+		}
 		Map<String, Integer> mapper = new HashMap();
-		String datasplit[] = data.split(" ");
+		String datasplit[] = data1.split(" ");
 		for(int i =0;i<datasplit.length;i++) {
 			if(mapper.get(datasplit[i])==null)
 					mapper.put(datasplit[i], 1);
@@ -33,6 +38,10 @@ public class Automata_Amazon {
 			mapper.remove(now);
 		}
 //		System.out.println(mapper);
+		List<String> remo1 = new ArrayList<String>();
+		for(int i =0;i<remo.size();i++){
+			remo1.add(convert(remo.get(i)));
+		}
 		List ans = new ArrayList<String>();
 			
 		int max = -1;
@@ -68,6 +77,19 @@ public class Automata_Amazon {
 		
 		
 		return ans;
+	}
+	public static String convert(String data){
+		if(data == null || data.equals(""))
+            return "";
+		data = data.toLowerCase();
+	     String data1 = "";
+			for(int i =0;i<data.length();i++){
+				if((int)data.charAt(i) >=97 && (int)data.charAt(i) <= 122)
+					data1 = data1 + String.valueOf(data.charAt(i));
+				else
+					data1 = data1 + " ";
+			}
+			return data1;
 	}
 
 }

@@ -1,5 +1,6 @@
 package coding;
 
+//import java.util.ç;
 import java.util.Scanner;
 
 public class Milly_is_playing_1 {
@@ -19,7 +20,6 @@ public class Milly_is_playing_1 {
 				ans++;
 			if(data[data.length-1] <=0)
 				ans++;
-			
 			int first = 0;
 			int last = 0;
 			for(int i=1;i<data.length;i++){
