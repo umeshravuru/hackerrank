@@ -1,12 +1,11 @@
 package webScrap.org.webScrap;
 
-import java.io.BufferedReader;
 
 public class Generate_random_string {
 
 	public static void main(String[] args) {
-		System.out.println(rand(100));	
-		
+		System.out.println(rand(100));
+
 	}
 
 	public static String rand(int n) {
