@@ -1,8 +1,5 @@
-package beer_night;
 
 import java.util.Scanner;
-
-import hack.replcae;
 
 public class Gcd
 {

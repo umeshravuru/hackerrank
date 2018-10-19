@@ -1,5 +1,4 @@
 .recommend/
-*.class
 .mylyn/
 /.metadata/
 .plugins/

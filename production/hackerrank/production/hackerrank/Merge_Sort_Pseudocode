@@ -1,0 +1,25 @@
+MergeSort(array A, int p, int r) {
+    if (p < r) {                            // we have at least 2 items
+    q = (p + r)/2
+    MergeSort(A, p, q)                      // sort A[p..q]
+    MergeSort(A, q+1, r)                    // sort A[q+1..r]
+    Merge(A, p, q, r)                       // merge everything together
+  }
+}
+
+
+
+
+
+Merge(array A, int p, int q, int r) {       // merges A[p..q] with A[q+1..r]
+array B[p..r]
+    i = k = p                               // initialize pointers
+    j = q+1
+    while (i <= q and j <= r) {             // while both subarrays are nonempty
+      if (A[i] <= A[j]) B[k++] = A[i++]     // copy from left subarray
+      else B[k++] = A[j++]                  // copy from right subarray
+      }
+    while (i <= q) B[k++] = A[i++]          // copy any leftover to B
+    while (j <= r) B[k++] = A[j++]
+    for i = p to r do A[i] = B[i]           // copy B back to A
+}
